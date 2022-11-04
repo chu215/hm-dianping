@@ -24,7 +24,8 @@ public class MvcConfig implements WebMvcConfigurer {
                         "/shop-type/**",
                         "/blog/hot",
                         "/user/code",
-                        "/user/login"
+                        "/user/login",
+                        "/voucher/**"
                 ).order(1);
         registry.addInterceptor(new RefreshTokenIterceptor(stringRedisTemplate)).order(0);
     }
